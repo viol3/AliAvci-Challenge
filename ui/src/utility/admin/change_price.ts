@@ -18,8 +18,8 @@ export const changePrice = (packageId: string, listHeroId: string, newPriceInSui
       target: `${packageId}::marketplace::change_the_price`,
       arguments: 
       [
-        tx.pure.object(adminCapId),
-        tx.pure.object(listHeroId),
+        tx.object(adminCapId),
+        tx.object(listHeroId),
         tx.pure.u64(newPriceInSui),
       ]
     }

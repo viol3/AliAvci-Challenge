@@ -14,7 +14,7 @@ export const createArena = (packageId: string, heroId: string) => {
       target: `${packageId}::arena::create_arena`,
       arguments: 
       [
-        tx.pure.object(heroId),
+        tx.object(heroId),
       ]
     }
   )
