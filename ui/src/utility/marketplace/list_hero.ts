@@ -10,7 +10,7 @@ export const listHero = (
   const priceInMist = Number(priceInSui) * 1_000_000_000
   tx.moveCall(
     {
-      target: `${packageId}::hero::list_hero`,
+      target: `${packageId}::marketplace::list_hero`,
       arguments: 
       [
           tx.object(heroId),
